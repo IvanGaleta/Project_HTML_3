@@ -1,1 +1,113 @@
- 
+* {
+    box-sizing: border-box;
+}
+main{
+    display: block;
+}
+.section-1,.section-2,.section-3 {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 150px;    
+    background:linear-gradient(rgb(212, 80, 184), rgb(78, 0, 72), #010801);
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+.section-2{
+    background:linear-gradient(rgb(82, 162, 228), rgb(39, 25, 117), #010801);    
+}
+.section-3{
+    background:linear-gradient(rgb(128, 198, 255), rgb(2, 77, 100), #010801);
+}
+.sales{
+    display: inline-block;
+    padding-top: 10px; 
+    padding-left: 10px;   
+}
+svg{
+    display: inline-block;
+    float: right;
+    padding-top: 10px;
+}
+.soma{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.percent{
+    font-size: 12px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.section-1::after{
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background-color:rgba(100, 20, 104, 0.4);
+    border-radius: 50%;
+    right: -60px;
+    bottom: 30px;
+    overflow:hidden;
+}
+.section-1::before{
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background-color:rgba(128, 20, 104, 0.4);
+    border-radius: 50%;
+    right: -10px;
+    bottom: -30px;    
+    z-index: 200;
+}
+.section-2::after{
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background-color:rgba(36, 95, 184, 0.4);
+    border-radius: 50%;
+    right: -60px;
+    bottom: 30px;
+    overflow:hidden;
+}
+.section-2::before{
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background-color:rgba(36, 95, 184, 0.4);
+    border-radius: 50%;
+    right: -10px;
+    bottom: -30px;    
+    z-index: 200;
+}
+.section-3::after{
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background-color:rgba(31, 146, 212, 0.4);
+    border-radius: 50%;
+    right: -60px;
+    bottom: 30px;
+    overflow:hidden;
+}
+.section-3::before{
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background-color:rgba(31, 146, 212, 0.4);
+    border-radius: 50%;
+    right: -10px;
+    bottom: -30px;    
+    z-index: 200;
+}
+.section-1,.section-2,.section-3{
+    overflow:hidden;
+}
