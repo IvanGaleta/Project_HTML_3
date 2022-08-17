@@ -4,7 +4,7 @@
 main{
     display: block;
 }
-.section-1,.section-2,.section-3 {
+.section-violet,.section-blue,.section-lightblue{
     display: inline-block;
     position: relative;
     width: 250px;
@@ -15,10 +15,10 @@ main{
     margin: 10px;
     color: white;
 }
-.section-2{
+.section-blue{
     background:linear-gradient(rgb(82, 162, 228), rgb(39, 25, 117), #010801);    
 }
-.section-3{
+.section-lightblue{
     background:linear-gradient(rgb(128, 198, 255), rgb(2, 77, 100), #010801);
 }
 .sales{
@@ -42,7 +42,10 @@ svg{
     padding-top: 30px;
     padding-left: 10px;
 }
-.section-1::after{
+.section-violet::after,
+.section-blue::after,
+.section-lightblue::after
+{
     content: "";
     position: absolute;
     width: 125px;
@@ -53,7 +56,9 @@ svg{
     bottom: 30px;
     overflow:hidden;
 }
-.section-1::before{
+.section-violet::before,
+.section-blue::before,
+.section-lightblue::before{
     content: "";
     position: absolute;
     width: 125px;
@@ -64,50 +69,6 @@ svg{
     bottom: -30px;    
     z-index: 200;
 }
-.section-2::after{
-    content: "";
-    position: absolute;
-    width: 125px;
-    height: 125px;
-    background-color:rgba(36, 95, 184, 0.4);
-    border-radius: 50%;
-    right: -60px;
-    bottom: 30px;
-    overflow:hidden;
-}
-.section-2::before{
-    content: "";
-    position: absolute;
-    width: 125px;
-    height: 125px;
-    background-color:rgba(36, 95, 184, 0.4);
-    border-radius: 50%;
-    right: -10px;
-    bottom: -30px;    
-    z-index: 200;
-}
-.section-3::after{
-    content: "";
-    position: absolute;
-    width: 125px;
-    height: 125px;
-    background-color:rgba(31, 146, 212, 0.4);
-    border-radius: 50%;
-    right: -60px;
-    bottom: 30px;
-    overflow:hidden;
-}
-.section-3::before{
-    content: "";
-    position: absolute;
-    width: 125px;
-    height: 125px;
-    background-color:rgba(31, 146, 212, 0.4);
-    border-radius: 50%;
-    right: -10px;
-    bottom: -30px;    
-    z-index: 200;
-}
-.section-1,.section-2,.section-3{
+.section-violet,.section-blue,.section-lightblue{
     overflow:hidden;
 }
